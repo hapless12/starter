@@ -20,6 +20,132 @@ return {
     },
   },
 
+    { "MunifTanjim/nui.nvim" },
+  { "nvim-lua/plenary.nvim" },
+  { "github/copilot.vim" },
+  { "rebelot/kanagawa.nvim", event = "VimEnter" },
+  {
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      require("nvim-tree").setup{}
+    end,
+    event = "VimEnter",
+  },
+  { "kyazdani42/nvim-web-devicons", event = "VimEnter" },
+  { "rafi/awesome-vim-colorschemes", event = "VimEnter" },
+  { "akinsho/bufferline.nvim", event = "VimEnter" },
+  { "nvim-lualine/lualine.nvim", event = "VimEnter" },
+  {
+    'DynamiteBumblemouth/neoflare-intro',
+    event = "VimEnter",
+    config = function()
+      require'alpha.themes.startify'.config()
+    end,
+  },
+  {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup{}
+    end,
+    event = "VimEnter",
+  },
+  { "folke/trouble.nvim", event = "VimEnter" },
+  {
+    "FeiyouG/command_center.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim" },
+    event = "VimEnter",
+  },
+  { "nvim-treesitter/nvim-treesitter", event = "VimEnter" },
+  { "ray-x/navigator.lua", event = "VimEnter" },
+  {
+    "akinsho/toggleterm.nvim",
+    config = function()
+      require("toggleterm").setup()
+    end,
+    event = "VimEnter",
+  },
+  { "williamboman/mason.nvim", event = "VimEnter" },
+  { "williamboman/mason-lspconfig.nvim", event = "VimEnter" },
+  { "neovim/nvim-lspconfig", event = "VimEnter" },
+  { "catppuccin/nvim", name = "catppuccin", event = "VimEnter" },
+  { "EdenEast/nightfox.nvim", event = "VimEnter" },
+  { "ellisonleao/gruvbox.nvim", event = "VimEnter" },
+  {
+    "mbbill/undotree",
+    cmd = { "UndotreeShow", "UndotreeToggle", "UndotreeHide", "UndotreeFocus" },
+    event = "VimEnter",
+  },
+  { "NvChad/nvim-colorizer.lua", ft = { "css" }, event = "VimEnter" },
+  {
+    "dstein64/vim-startuptime",
+    cmd = "StartupTime",
+    config = function()
+      vim.g.startuptime_tries = 10
+    end,
+    event = "VimEnter",
+  },
+  { "folke/tokyonight.nvim", event = "VimEnter" },
+}return {
+  { "MunifTanjim/nui.nvim" },
+  { "nvim-lua/plenary.nvim" },
+  { "github/copilot.vim" },
+  { "rebelot/kanagawa.nvim", event = "VimEnter" },
+  {
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      require("nvim-tree").setup{}
+    end,
+    event = "VimEnter",
+  },
+  { "kyazdani42/nvim-web-devicons", event = "VimEnter" },
+  { "rafi/awesome-vim-colorschemes", event = "VimEnter" },
+  { "akinsho/bufferline.nvim", event = "VimEnter" },
+  { "nvim-lualine/lualine.nvim", event = "VimEnter" },
+  {
+    'DynamiteBumblemouth/neoflare-intro',
+    event = "VimEnter",
+    config = function()
+      require'alpha.themes.startify'.config()
+    end,
+  },
+  {
+    "FeiyouG/command_center.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim" },
+    event = "VimEnter",
+  },
+  { "nvim-treesitter/nvim-treesitter", event = "VimEnter" },
+  { "ray-x/navigator.lua", event = "VimEnter" },
+  {
+    "akinsho/toggleterm.nvim",
+    config = function()
+      require("toggleterm").setup()
+    end,
+    event = "VimEnter",
+  },
+  { "williamboman/mason.nvim", event = "VimEnter" },
+  { "williamboman/mason-lspconfig.nvim", event = "VimEnter" },
+  { "neovim/nvim-lspconfig", event = "VimEnter" },
+  { "catppuccin/nvim", name = "catppuccin", event = "VimEnter" },
+  { "EdenEast/nightfox.nvim", event = "VimEnter" },
+  { "ellisonleao/gruvbox.nvim", event = "VimEnter" },
+  {
+    "mbbill/undotree",
+    cmd = { "UndotreeShow", "UndotreeToggle", "UndotreeHide", "UndotreeFocus" },
+    event = "VimEnter",
+  },
+  { "NvChad/nvim-colorizer.lua", ft = { "css" }, event = "VimEnter" },
+  {
+    "dstein64/vim-startuptime",
+    cmd = "StartupTime",
+    config = function()
+      vim.g.startuptime_tries = 10
+    end,
+    event = "VimEnter",
+  },
+  { "folke/tokyonight.nvim", event = "VimEnter" },
+
   -- change trouble config
   {
     "folke/trouble.nvim",
