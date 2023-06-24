@@ -14,7 +14,7 @@ return {
 
   -- Configure LazyVim to load gruvbox
   {
-    "LazyVim/LazyVim",
+    "hapless12/LazyVim",
     opts = {
       colorscheme = "gruvbox",
     },
